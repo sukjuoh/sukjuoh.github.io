@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sukju Oh</title>
+<meta name="description" content="Sukju Oh, M.S. student at Dongguk University working on vision-language models, biomedical signals, and surgical robot learning.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#16212e; --body:#334051; --muted:#677384;
+  --rule:#dde3e8; --accent:#1e6b63; --accent-soft:#e6f1ef; --pending:#8a6d1d;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#121a22; --ink:#eef2f5; --body:#c6cfd8; --muted:#8e9aa7;
+    --rule:#26323d; --accent:#6cc3b7; --accent-soft:#1a2c2c; --pending:#d9b860;}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--body);font:16px/1.65 var(--sans)}
+main{max-width:760px;margin:0 auto;padding:56px 24px 72px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:currentColor}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:600;margin:0}
+h1{font-size:2.25rem;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:1.35rem;margin:0 0 16px}
+section{margin-top:44px}
+
+/* hero */
+.role{margin:6px 0 14px;color:var(--muted)}
+.hero p{margin:0 0 12px;max-width:72ch}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-weight:500}
+
+.divider{border:0;border-top:1px solid var(--rule);margin:36px 0 0}
+
+/* news */
+.news{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:5px 0}
+.news time{color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* publications */
+.note{color:var(--muted);font-size:.9rem;margin:-8px 0 18px}
+.pub{padding:16px 0;border-top:1px solid var(--rule)}
+.pub:first-of-type{border-top:0;padding-top:4px}
+.pub h3{font-size:1.08rem;line-height:1.4;margin-bottom:4px}
+.authors{margin:0}
+.authors strong{color:var(--ink);font-weight:600}
+.venue{margin:2px 0 0;font-style:italic}
+.status{display:inline-block;font-style:normal;font-size:.82rem;font-weight:500;
+  padding:1px 8px;border-radius:3px;margin-left:6px;vertical-align:1px}
+.status.out{background:var(--accent-soft);color:var(--accent)}
+.status.wait{border:1px solid currentColor;color:var(--pending)}
+.summary{margin:6px 0 0;max-width:66ch}
+.plinks{margin-top:6px;display:flex;gap:16px;font-size:.95rem;font-weight:500}
+.todo{background:#fff2a8;color:#5b4a00;padding:0 3px;border-radius:2px}
+
+/* simple lists */
+.entries{list-style:none;margin:0;padding:0}
+.entries li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:6px 0}
+.entries .when{color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.entries .sub{grid-column:1/-1;color:var(--muted);margin-top:-4px}
+footer{margin-top:56px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:600px){
+  main{padding:36px 20px 56px}
+      h1{font-size:1.9rem}
+  .news li{grid-template-columns:1fr;gap:0}
+  .entries li{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+    <h1>Sukju Oh</h1>
+    <p class="role">M.S. student, Computer Science and Artificial Intelligence, Dongguk University</p>
+    <p>I work on AI for medical imaging, biomedical signals, and surgical robotics, with a focus on problems that are specific to each domain. My interests also extend to machine learning beyond medicine.</p>
+    <p>I work in the DGU AIM Lab with Prof. Sukkyu Sun, in close collaboration with clinicians at Seoul National University Hospital and Dongguk University Ilsan Hospital.</p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a href="mailto:dhtjrwn119@gmail.com">Email</a>
+      <a href="cv.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?user=82-x0poAAAAJ&amp;hl=en">Google Scholar</a>
+      <a href="https://github.com/sukjuoh">GitHub</a>
+    </nav>
+</header>
+
+<hr class="divider">
+
+<section aria-labelledby="news">
+  <h2 id="news">News</h2>
+  <ul class="news">
+    <li><time>Oct 2026</time><span>VL-AcneSeg is published in <em>IEEE Journal of Biomedical and Health Informatics</em> (Early Access).</span></li>
+    <li><time>Mar 2026</time><span>Started my M.S. at Dongguk University, advised by Prof. Sukkyu Sun.</span></li>
+    <li><time>Feb 2026</time><span>Received my B.S. in Statistics and Management Information Systems.</span></li>
+    <li><time>Jun 2024</time><span>Joined the DGU AIM Lab as an undergraduate research intern.</span></li>
+  </ul>
+</section>
+
+<section aria-labelledby="pubs">
+  <h2 id="pubs">Publications</h2>
+  <p class="note">* corresponding author, † equal contribution</p>
+
+  <article class="pub">
+    <h3>VL-AcneSeg: A Vision-Language Framework for Region-Aware Acne Lesion Segmentation</h3>
+    <p class="authors"><strong>Sukju Oh</strong>, Soo Ick Cho, Dae Hun Suh, Sukkyu Sun*</p>
+    <p class="venue">IEEE Journal of Biomedical and Health Informatics, 2026 <span class="status out">Early Access</span></p>
+    <div class="plinks"><a href="https://arxiv.org/abs/2609.34472">arXiv</a><a href="https://github.com/sukjuoh/VL-AcneSeg">Code</a></div>
+  </article>
+
+  <article class="pub">
+    <h3>SurgicalMamba: Dual-Path SSD with State Regramming for Online Surgical Phase Recognition</h3>
+    <p class="authors"><strong>Sukju Oh</strong>, Sukkyu Sun*</p>
+    <p class="venue">Preprint, 2026 <span class="status wait">Under review</span></p>
+    <div class="plinks"><a href="https://arxiv.org/abs/2605.14889">arXiv</a><a href="https://github.com/sukjuoh/Surgical-Mamba">Code</a></div>
+  </article>
+
+  <article class="pub">
+    <h3>Joint Video-Action Generation for Data-Scarce Surgical Robot Learning</h3>
+    <p class="authors">Hojung Lee†, <strong>Sukju Oh</strong>†, Sukkyu Sun*</p>
+    <p class="venue">Preprint, 2026 <span class="status wait">Under review</span></p>
+  </article>
+
+  <article class="pub">
+    <h3>Cardiologent: Multi-Agent Clinical Decision Support for Patient-Level Arrhythmia Assessment, Urgency, and Management</h3>
+    <p class="authors"><strong>Sukju Oh</strong>, Moo-Yong Rhee, Jae-Sik Jang, Sukkyu Sun*</p>
+    <p class="venue">Preprint, 2026 <span class="status wait">Under review</span></p>
+    <div class="plinks"><a href="https://arxiv.org/abs/2607.25340">arXiv</a><a href="https://github.com/sukjuoh/Cardiologent">Code</a></div>
+  </article>
+
+  <article class="pub">
+    <h3>ArrhyMamba: Explainable Unsupervised PPG Anomaly Detection for Arrhythmia via State Space Models</h3>
+    <p class="authors"><strong>Sukju Oh</strong>, Moo-Yong Rhee*, Sukkyu Sun*</p>
+    <p class="venue">Applied Soft Computing, 2026 <span class="status wait">Under revision</span></p>
+    <div class="plinks"><a href="https://github.com/sukjuoh/ArrhyMamba">Code</a></div>
+  </article>
+</section>
+
+<section aria-labelledby="edu">
+  <h2 id="edu">Education</h2>
+  <ul class="entries">
+    <li><span>M.S. in Computer Science and Artificial Intelligence, Dongguk University</span><span class="when">2026 – present</span>
+      <span class="sub">Advisor: Prof. Sukkyu Sun</span></li>
+    <li><span>B.S. in Statistics and Management Information Systems, Dongguk University</span><span class="when">2020 – 2026</span>
+      <span class="sub">GPA 4.13 / 4.5</span></li>
+  </ul>
+</section>
+
+<section aria-labelledby="pat">
+  <h2 id="pat">Patents</h2>
+  <ul class="entries">
+    <li><span>Photoplethysmography anomaly detection using generative models</span><span class="when">KR 10-2025-0030999</span></li>
+    <li><span>Method and device for assisting in the diagnosis of acne lesions</span><span class="when">KR 10-2025-0129404</span></li>
+    <li><span>Method and device for generating long-term bio signals based on digital twins</span><span class="when">KR 10-2025-0129405</span></li>
+  </ul>
+</section>
+
+<footer>Last updated October 2026</footer>
+</main>
+</body>
+</html>
